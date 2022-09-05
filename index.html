@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player - My own music player</title>
+    <!-- fav icon -->
+    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header section start -->
+    <header>
+      <div class="brand">
+        <img src="images/logo.png" alt="" />
+        <h2>Music Player</h2>
+      </div>
+      <div class="gif-animation">
+        <img id="playing-gif" src="images/playing.gif" alt="" />
+      </div>
+    </header>
+    <!-- header section end -->
+
+    <!-- main section start -->
+    <main>
+      <div class="container">
+        <div class="song-play">
+          <img id="play-cover" src="" alt="" />
+          <span id="play-title"></span>
+        </div>
+        <div id="song-list"></div>
+      </div>
+    </main>
+    <!-- main section end -->
+
+    <!-- footer section start -->
+    <footer>
+      <div class="audio-control">
+        <i id="backward-btn" class="fa-solid fa-backward-step"></i>
+        <i id="play-btn" class="fa-sharp fa-solid fa-circle-play"></i>
+        <i id="forward-btn" class="fa-solid fa-forward-step"></i>
+      </div>
+      <div class="progressbar-control">
+        <input id="progressbar" type="range" min="0" max="100" value="0" />
+      </div>
+      <div class="sound-control">
+        <i id="sound-mute" class="fa-sharp fa-solid fa-volume-xmark"></i>
+      </div>
+    </footer>
+    <!-- footer section end -->
+
+    <!-- font awesome icon -->
+    <script
+      src="https://kit.fontawesome.com/d3484afbf2.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- custom js -->
+    <script src="script.js"></script>
+  </body>
+</html>
